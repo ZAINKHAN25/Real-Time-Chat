@@ -37,10 +37,10 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// app.get("/", (req, res) => {
-//   console.log("Welcome!");
-//   res.json({ greetings: "ho gya!" });
-// });
+app.get("/", (req, res) => {
+  console.log("Welcome!");
+  res.json({ greetings: "ho gya!" });
+});
 
 server.listen(PORT, () => {
   console.log("server is running on PORT:" + PORT);
